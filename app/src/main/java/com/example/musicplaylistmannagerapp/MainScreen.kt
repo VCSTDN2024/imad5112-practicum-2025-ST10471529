@@ -1,5 +1,5 @@
 package com.example.musicplaylistmannagerapp
-
+// Leander Hughes ST10471529
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +15,8 @@ import kotlin.system.exitProcess
 
 class MainScreen : AppCompatActivity() {
 
+    //Declaring the variables
+    // I used private lateinit var as it is a variable that will be initialized later
     private lateinit var btnAdd: Button
     private lateinit var nextScreen: Button
     private lateinit var btnExit: Button
@@ -29,6 +31,7 @@ class MainScreen : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main_screen)
 
+        // Initialize views
         btnAdd = findViewById(R.id.btnAdd)
         nextScreen = findViewById(R.id.nextScreen)
         btnExit = findViewById(R.id.btnExit)
@@ -45,6 +48,7 @@ class MainScreen : AppCompatActivity() {
             val rating = ratings.text.toString().trim()
 
             fun showToast(s: String) {
+                // This is a toast that will display when the user does not add any information into the editText view
                 Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
             }
             if (title.isEmpty() || artist.isEmpty() || genre.isEmpty() || rating.isEmpty()) {
@@ -52,7 +56,7 @@ class MainScreen : AppCompatActivity() {
                 } else {
                 showToast("Successfully added to playlists")
             }
-
+            //These codes simply clears the information that was added when the user clicks add to playlist
                 songTile.text.clear()
                 artistName.text.clear()
                 userComments.text.clear()
@@ -61,12 +65,14 @@ class MainScreen : AppCompatActivity() {
 
             nextScreen.setOnClickListener {
                 // Handle the click event for nextScreen button
+                // Takes the user to the next screen
                 val intent = Intent(this, DetailedView::class.java)
                 startActivity(intent)
             }
 
             btnExit.setOnClickListener {
                 // Handle the click event for btnExit button
+                // Exits the app
                 finishAffinity()
                 exitProcess(0)
             }

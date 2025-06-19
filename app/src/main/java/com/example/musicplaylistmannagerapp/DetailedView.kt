@@ -1,5 +1,5 @@
 package com.example.musicplaylistmannagerapp
-
+// Leander Hughes ST10471529
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -32,15 +32,17 @@ class DetailedView : AppCompatActivity() {
 
         displaySongs.setOnClickListener {
             // Handle the click event for displaySongs button
+            for (i in 1..4) {
+            }
         }
 
         CalulateAndDisplay.setOnClickListener {
             // Handle the click event for CalulateAndDisplay button
-
         }
 
         btnReturn.setOnClickListener {
             // Handle the click event for btnReturn button
+            // Takes the user to the main screen
             val intent = Intent(this, MainScreen::class.java)
             startActivity(intent)
         }

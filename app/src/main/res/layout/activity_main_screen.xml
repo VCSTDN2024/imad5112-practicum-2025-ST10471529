@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+// Leander Hughes ST10471529
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -49,7 +50,7 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="56dp"
-        android:hint="Ratings:"
+        android:hint="Ratings:1-5"
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/aqua"
