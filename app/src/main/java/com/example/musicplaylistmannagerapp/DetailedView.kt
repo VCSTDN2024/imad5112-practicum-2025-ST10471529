@@ -14,8 +14,6 @@ class DetailedView : AppCompatActivity() {
     private lateinit var displaySongs: Button
     private lateinit var CalulateAndDisplay: Button
     private lateinit var btnReturn: Button
-    private lateinit var displayView1: TextView
-    private lateinit var displayView2: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,16 +23,17 @@ class DetailedView : AppCompatActivity() {
         displaySongs = findViewById(R.id.displaySongs)
         CalulateAndDisplay = findViewById(R.id.CalulateAndDisplay)
         btnReturn = findViewById(R.id.btnReturn)
-        displayView1 = findViewById(R.id.displayView1)
-        displayView2 = findViewById(R.id.displayView2)
 
         displaySongs.setOnClickListener {
             // Handle the click event for displaySongs button
-
+            val intent = Intent(this, DisplayList::class.java)
+            startActivity(intent)
         }
 
         CalulateAndDisplay.setOnClickListener {
             // Handle the click event for CalulateAndDisplay button
+            val intent = Intent(this, Displayrating::class.java)
+            startActivity(intent)
         }
 
         btnReturn.setOnClickListener {

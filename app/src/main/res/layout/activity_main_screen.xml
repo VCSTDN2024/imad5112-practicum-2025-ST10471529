@@ -5,100 +5,111 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainScreen">
+    tools:context=".MainScreen"
+    android:background="@drawable/background2">
 
     <TextView
         android:id="@+id/songTile"
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="56dp"
         android:hint="Song Title:"
         android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/aqua"
+        android:textColorHint="@color/aqua"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="71dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/artistName"
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="56dp"
         android:hint="Artist's name:"
         android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/aqua"
+        android:textColorHint="@color/aqua"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songTile" />
 
-    <RadioButton
-        android:id="@+id/rating1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="1"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <RadioButton
-        android:id="@+id/rating2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="2"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <RadioButton
-        android:id="@+id/rating3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="3"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <RadioButton
-        android:id="@+id/rating4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="4"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="209dp" />
-
-    <RadioButton
-        android:id="@+id/rating5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="5"
-        tools:layout_editor_absoluteX="334dp"
-        tools:layout_editor_absoluteY="209dp" />
+    <TextView
+        android:id="@+id/ratings"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:hint="Ratings:"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/aqua"
+        android:textColorHint="@color/aqua"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistName" />
 
     <TextView
         android:id="@+id/userComments"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:hint="User Comments: Genre"
         android:text=""
-        android:hint="User Comments:"
+        android:textAlignment="center"
+        android:textColor="@color/aqua"
+        android:textColorHint="@color/aqua"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="312dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratings" />
 
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="116dp"
         android:text="| ADD TO PLAYLIST |"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="441dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userComments" />
 
     <Button
         android:id="@+id/nextScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="129dp"
         android:text="| NEXT SCREEN |"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="508dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
         android:id="@+id/btnExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="160dp"
         android:text="| EXIT |"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="575dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextScreen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
