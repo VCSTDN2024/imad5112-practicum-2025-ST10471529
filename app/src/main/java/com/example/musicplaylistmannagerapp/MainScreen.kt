@@ -39,27 +39,36 @@ class MainScreen : AppCompatActivity() {
 
         btnAdd.setOnClickListener {
             // Handle the click event for btnAdd button
-            val title = songTile.text.toString()
-            val artist = artistName.text.toString()
-            val genre = userComments.text.toString()
-            val rating = ratings.text.toString()
-            showToast("Successfully added to playlist")
-        }
+            val title = songTile.text.toString().trim()
+            val artist = artistName.text.toString().trim()
+            val genre = userComments.text.toString().trim()
+            val rating = ratings.text.toString().trim()
 
-        nextScreen.setOnClickListener {
-            // Handle the click event for nextScreen button
-            val intent = Intent(this, DetailedView::class.java)
-            startActivity(intent)
-        }
+            fun showToast(s: String) {
+                Toast.makeText(this, s, Toast.LENGTH_SHORT).show()
+            }
+            if (title.isEmpty() || artist.isEmpty() || genre.isEmpty() || rating.isEmpty()) {
+                showToast("Please fill all the fields")
+                } else {
+                showToast("Successfully added to playlists")
+            }
 
-        btnExit.setOnClickListener {
-            // Handle the click event for btnExit button
-            finishAffinity()
-            exitProcess(0)
+                songTile.text.clear()
+                artistName.text.clear()
+                userComments.text.clear()
+                ratings.text.clear()
+            }
+
+            nextScreen.setOnClickListener {
+                // Handle the click event for nextScreen button
+                val intent = Intent(this, DetailedView::class.java)
+                startActivity(intent)
+            }
+
+            btnExit.setOnClickListener {
+                // Handle the click event for btnExit button
+                finishAffinity()
+                exitProcess(0)
+            }
         }
     }
-
-    private fun showToast(s: String) {
-        Toast.makeText(this, "Successfully added to playlist", Toast.LENGTH_SHORT).show()
-    }
-}

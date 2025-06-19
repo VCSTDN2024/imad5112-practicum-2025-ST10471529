@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class DetailedView : AppCompatActivity() {
 
+    //Declaring the variables
     private lateinit var displaySongs: Button
     private lateinit var CalulateAndDisplay: Button
     private lateinit var btnReturn: Button
@@ -22,6 +23,7 @@ class DetailedView : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detailed_view)
 
+        // Initialize views
         displaySongs = findViewById(R.id.displaySongs)
         CalulateAndDisplay = findViewById(R.id.CalulateAndDisplay)
         btnReturn = findViewById(R.id.btnReturn)
@@ -34,13 +36,7 @@ class DetailedView : AppCompatActivity() {
 
         CalulateAndDisplay.setOnClickListener {
             // Handle the click event for CalulateAndDisplay button
-            val displayRating = displayRating.text.toString()
-            if (displayRating.isNotEmpty()) {
-                val total = displayRating.sum()
-                val average = total.toDouble() / displayRating.size
-                displayRating.text = "Average rating: $average"
-            }else
-                displayRating.text = "No songs in the list"
+
         }
 
         btnReturn.setOnClickListener {
@@ -48,6 +44,5 @@ class DetailedView : AppCompatActivity() {
             val intent = Intent(this, MainScreen::class.java)
             startActivity(intent)
         }
-
     }
 }
