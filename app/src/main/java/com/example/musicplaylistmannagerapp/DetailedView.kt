@@ -14,6 +14,8 @@ class DetailedView : AppCompatActivity() {
     private lateinit var displaySongs: Button
     private lateinit var CalulateAndDisplay: Button
     private lateinit var btnReturn: Button
+    private lateinit var displayRating: TextView
+    private lateinit var displayListSongs: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,17 +25,22 @@ class DetailedView : AppCompatActivity() {
         displaySongs = findViewById(R.id.displaySongs)
         CalulateAndDisplay = findViewById(R.id.CalulateAndDisplay)
         btnReturn = findViewById(R.id.btnReturn)
+        displayRating = findViewById(R.id.displayRating)
+        displayListSongs = findViewById(R.id.diplayListSongs)
 
         displaySongs.setOnClickListener {
             // Handle the click event for displaySongs button
-            val intent = Intent(this, DisplayList::class.java)
-            startActivity(intent)
         }
 
         CalulateAndDisplay.setOnClickListener {
             // Handle the click event for CalulateAndDisplay button
-            val intent = Intent(this, Displayrating::class.java)
-            startActivity(intent)
+            val displayRating = displayRating.text.toString()
+            if (displayRating.isNotEmpty()) {
+                val total = displayRating.sum()
+                val average = total.toDouble() / displayRating.size
+                displayRating.text = "Average rating: $average"
+            }else
+                displayRating.text = "No songs in the list"
         }
 
         btnReturn.setOnClickListener {
