@@ -14,80 +14,44 @@ Start with a header section that includes the following basic details:
 - **Subject**: IMAD5112
 
 ## Links
-- **GitHub Repository**: 
-
-Why:
-----
-- This section gives the basic context of who created the project and provides links to the repository and the video demonstration.
-
----
+- **GitHub Repository**: https://github.com/VCSTDN2024/imad5112-practicum-2025-ST10471529.git
 
 2. Project Overview
 -------------------
-
-```markdown
 ## Project Overview
 
-The **[App Title]** is a mobile application developed as part of an assignment in the [Course Name] subject. This application was created using **Kotlin** and **Android Studio**. The app's primary purpose is to [briefly describe the purpose of the app, e.g., provide a task management system, display weather forecasts, etc.].
+The **Music Playlist Manager app** is a mobile application developed as part of a practicum in the IMAD5112 subject. This application was created using **Kotlin** and **Android Studio**. The app's primary purpose is to allow the user to input song information, add that to a playlist and give a rating aswell as calculate the average of that app's rating.
 
-The app was developed to meet the requirements of the assignment, which includes creating a functional mobile app and utilizing GitHub for version control and CI/CD automation using GitHub Actions.
-```
-
-Why:
-----
-- Provides a brief, high-level summary of the project. This helps anyone reading the document (including your lecturer and potential future employers) understand the app’s purpose quickly.
-
----
+The app was created to meet the requirements of the practicums guidlines.
 
 3. App Purpose and Features
 ---------------------------
-
-```markdown
 ## Purpose and Features
 
 ### Purpose:
-The main goal of this app is to [explain the app’s functionality]. 
+The main goal of this app is to allow the user to see the rating average of the songs information they had placed into the app. 
 
 ### Key Features:
-- Feature 1: [Description of a feature, e.g., "User login functionality"]
-- Feature 2: [Description of another feature, e.g., "Displaying weather data based on location"]
-- Feature 3: [Optional, another feature, e.g., "Push notifications for reminders"]
+- Feature 1: Ease of access to the app with clear information on what to do.
+- Feature 2:Provide a vissually appealing look to the app.
+- Feature 3: Have a message pop up showing the user to enter all the fields into the designated editTexts.
 
-These features aim to provide [what the app aims to achieve, e.g., an easy-to-use platform for managing tasks or organizing personal information].
-```
-
-Why:
-----
-- This section breaks down the specific features and the purpose of the app, giving clarity on the app’s functionality.
-
----
+These features aim to provide a fun and easy way to view the screens and get an idea of the specific information needed for the understaning of what people rate the song youve inputed.
 
 4. Design Considerations
 ------------------------
-
-```markdown
 ## Design Considerations
 
-The design of the **[App Title]** was based on the following key considerations:
+The design of the **Music playlist manager app** was based on the following key considerations:
 
-1. **User Experience (UX)**: The app was designed with the goal of providing an intuitive and easy-to-navigate user interface, ensuring a seamless user experience.
+1. **User Experience (UX)**: The app was designed with the goal of providing an intuitive and easy-to-navigate user interface, ensuring a seamless user experience aswell as a easy to understand the information on the app.
    
-2. **Responsiveness**: The app was built to ensure it performs well on different screen sizes, with particular attention to device compatibility.
+2. **Responsiveness**: The app was built to ensure it performs well on different screen sizes, with particular attention to device compatibility. The app also responds reasinalbly fast when the user does certain inputs.
    
-3. **Simplicity**: The design is minimalistic, focusing on core features without overwhelming the user.
-   
-4. **Performance**: Code optimization was considered to ensure fast response times and low battery usage.
-```
-
-Why:
-----
-- Highlights the thought process behind the design choices. It demonstrates that students are considering not just the functionality, but also the usability and performance aspects of the app, which is a professional approach.
-
----
+3. **Simplicity**: The design has a mix of simplicity but complexity aswell which all comes together to form a decent and good looking app.
 
 5. GitHub and GitHub Actions Utilization
 ----------------------------------------
-```markdown
 ## GitHub and GitHub Actions
 
 This project was managed using **GitHub** for version control, where all code changes were committed and pushed regularly. GitHub enabled collaborative coding, allowing me to keep track of changes and maintain project integrity.
@@ -95,163 +59,88 @@ This project was managed using **GitHub** for version control, where all code ch
 ### GitHub Actions:
 I utilized **GitHub Actions** to automate the build and deployment process. This includes:
 
-- Running automated **tests** to ensure the app’s functionality.
+- Running automated **tests** to ensure the app’s functionality. I have also pushed my code through cmd.
 - Compiling the app into **APK** and **AAB** files, which are the formats required for distribution.
 - Uploading these build artifacts to GitHub for easy access.
 
 The workflow ensures that my project is automatically built and tested every time I push changes, and it simplifies the process of delivering the final APK/AAB files for submission.
-```
-
-Why:
-----
-- This section educates students on why they should understand version control (GitHub) and automation (GitHub Actions). It shows how they’re adopting industry-standard practices, which is useful for both academic purposes and career development.
-
----
 
 6. Screenshots and App Demo
 ---------------------------
-
-```markdown
 ## Screenshots
 
 ### App Screenshots:
-![Screenshot 1](path_to_screenshot_1.png)
-*Caption for screenshot 1: [Describe the context, e.g., "The home screen of the app showing the task list."]*
+![Screenshot 1]![image](https://github.com/user-attachments/assets/3f59f9e9-fabf-4275-a4a7-fec23ec6ef67)
 
-![Screenshot 2](path_to_screenshot_2.png)
-*Caption for screenshot 2: [Describe the context, e.g., "The user profile screen where personal information is updated."]*
+*Caption for screenshot 1: In this screenshot it shows the first screen you are presented with and this shows the user what teh app is about.
 
-### Video Demo:
-A video showcasing the app's functionality can be viewed here: [YouTube Video Link].
-```
+![Screenshot 2]![image](https://github.com/user-attachments/assets/e2c90872-fc6f-4c90-aa28-c04f5b98670b)
 
-Why:
-----
-- Visuals like screenshots or a video link provide concrete evidence of the app’s functionality. This is an easy way for the reader to see what the app looks like and how it operates.
+*Caption for screenshot 2: This screenshot shown shows the user a window where they can add information is such as the song name, artist, ratings and comments of what type of song genre it is. This provides a interactive space between the user and the app.
 
----
+![Screenshot 3] ![image](https://github.com/user-attachments/assets/06878d0a-5c2f-47cb-9f7c-5cae56689647)
+*Caption for screenshot 3: In this schreenshot, the user is shown the detailed screen where there are 3 buttons that are supposed to do certain functions. You will see there are spaces inbwteeen 2 buttons and that space has the TextViews where the answers will display on.
+
+![Screenshot 4]![image](https://github.com/user-attachments/assets/e09a2f3b-97fc-438a-aa76-1cfd9d27bffb)
+               ![image](https://github.com/user-attachments/assets/1512b4b1-a3fd-41ce-83af-4bc26fbaa623)
+               ![image](https://github.com/user-attachments/assets/b0ee16e8-7ddc-4c51-8831-7d4c6bc01678)
+*Caption for screenshot 4: THe screenshots above are the main activity file (Main SCreen codes). This was all the codes ive used to allow my app to work correctly and fucntion as it should with not hicups.
+
+![Screenshot 5] ![image](https://github.com/user-attachments/assets/2af06047-ba38-4273-87fe-29c672cf3a24)
+               ![image](https://github.com/user-attachments/assets/f26e0056-fb9e-455b-9563-bb58503ac8ad)
+*Caption for screenshot 4: These 2 images are the detailed screen where the user willl see the information of average rating and playlist of songs. In one image you will see the error i was faced with during my time and wasnt able to debug it and finish it.
+
 
 7. Challenges and Learnings
 ---------------------------
-
-```markdown
 ## Challenges and Learnings
 
 During the development of this project, I encountered several challenges, including:
 
-1. **Challenge 1**: [Briefly describe a challenge you faced, e.g., "Implementing a complex feature like the login system."]
+1. **Challenge 1**: 
    - **Solution**: [How you solved the challenge, e.g., "I researched Firebase authentication and successfully integrated it into the app."]
    
 2. **Challenge 2**: [Describe another challenge, e.g., "Debugging issues related to Gradle builds."]
    - **Solution**: [How you solved the challenge.]
 
 From these challenges, I learned important lessons in debugging, using version control, and automating build processes with GitHub Actions.
-```
-
-Why:
-----
-- Reflecting on challenges and solutions shows growth and problem-solving skills, which are critical for students. It also gives insight into their learning process, which can be valuable to employers.
-
----
 
 8. Future Enhancements
-----------------------
-
-```markdown
+---------------------
 ## Future Enhancements
 
 While the current version of the app provides the core functionality, there are several features that could be added in the future, including:
 
-1. **Feature 1**: [Description, e.g., "Allowing users to set up reminders or notifications."]
-2. **Feature 2**: [Description, e.g., "Integrating with a cloud database for storing user data."]
-3. **Feature 3**: [Description, e.g., "Adding a dark mode option for better user experience."]
+1. **Feature 1**: Allow the user to insert the Album name of the song and where it came from.
+2. **Feature 2**: Able to view the users time of day they made that log on the app for reserch purposes>
+3. **Feature 3**: Make adjustments to the information when a new playlist was created so that the user can add their thoughts about the playlist of songs.
 
 These enhancements would improve the app’s usability and make it even more versatile for end-users.
-```
-
-Why:
-----
-- Suggesting future improvements shows forward thinking and a desire to continuously improve. It also demonstrates that the student has a clear vision for the app beyond the current assignment.
-
----
 
 9. References
--------------
-
-```markdown
+-----------
 ## References
 
-1. [Reference 1: E.g., any books, articles, or online resources you used during development.]
-2. [Reference 2: Any relevant papers, documentation, or tutorials.]
-```
-
-Why:
-----
-- The References section is critical for academic work to acknowledge the resources and inspiration used during the project.
-
----
+1. backgrounds image for logo
+https://in.pinterest.com/pin/571112796510933570/
+2. background image1 
+https://in.pinterest.com/pin/571112796510933570/
+4. background image2
+https://in.pinterest.com/pin/2603712281466638/
+5. background image3
+https://in.pinterest.com/pin/10696117858585357/
+6. background image4
+https://in.pinterest.com/pin/81909286966018815/
+7. background image5
+https://in.pinterest.com/pin/50454458319935475/
 
 10. List of Figures
 -------------------
-
-```markdown
 ## List of Figures
 
-- **Figure 1**: Screenshot of the app's home screen.
-- **Figure 2**: Screenshot of the user profile screen.
+- **Figure 1**: ![image](https://github.com/user-attachments/assets/3f59f9e9-fabf-4275-a4a7-fec23ec6ef67)
+- **Figure 2**: ![image](https://github.com/user-attachments/assets/e2c90872-fc6f-4c90-aa28-c04f5b98670b)
+- **Figure 3**: ![image](https://github.com/user-attachments/assets/06878d0a-5c2f-47cb-9f7c-5cae56689647)
 ```
 
-Why:
-----
-- This section provides a clear reference to all the images included in the document, which improves readability and helps the lecturer follow along with the visuals.
 
----
-
-11. Disclosure of AI Usage in My Assessment
--------------------------------------------
-
-```markdown
-## Disclosure of AI Usage in My Assessment
-
-## Disclosure of AI Usage in My Assessment
-
-In the development of this project, I have used generative AI tools to assist in various parts of the assignment. Below is a detailed disclosure of where and how these tools were used:
-
-### 1. **Section(s) in which Generative AI was used:**
-- **Question 2.2**: Used AI for brainstorming ideas for the app's features.
-- **Part 5**: Assisted in creating code snippets for setting up GitHub Actions workflows.
-- **Part 3**: Used AI to help improve the grammar and clarity of the report.
-
-### 2. **Name of AI Tool(s) Used:**
-- **ChatGPT** (OpenAI)
-- **GitHub Copilot** (GitHub)
-
-### 3. **Purpose/Intention Behind Use:**
-- **Brainstorming**: Used ChatGPT to generate ideas for the app’s features and functionality.
-- **Meaning Making**: Used AI to clarify some concepts and gain a better understanding of how certain technologies (e.g., GitHub Actions) work.
-- **Initial Investigation**: Utilized AI to conduct research on best practices for Android app development and GitHub Actions setup.
-- **Code Assistance**: GitHub Copilot was used to assist in writing specific parts of the code, such as setting up GitHub Actions and working with Gradle.
-- **Correcting Grammar and Spelling**: ChatGPT helped review and correct the grammar and clarity of my project report.
-
-### 4. **Date(s) in Which Generative AI Was Used:**
-- **Question 2.2**: AI used on **March 5, 2025** for brainstorming feature ideas.
-- **Part 5**: AI used on **March 8, 2025** to help set up GitHub Actions.
-- **Part 3**: AI used on **March 10, 2025** for reviewing the final report.
-
-### 5. **Link to the AI Chat(s) or Screenshots:**
-- **Chat 1 (Brainstorming App Features)**: [Link to the AI conversation/chat](insert_link_here)  
-  *(Screenshot/Link to Chat: AI provided feature ideas for app development)*
-
-- **Chat 2 (GitHub Actions Workflow Setup)**: [Link to the AI conversation/chat](insert_link_here)  
-  *(Screenshot/Link to Chat: AI assisted with configuring GitHub Actions for the project)*
-
-- **Chat 3 (Grammar Review)**: [Link to the AI conversation/chat](insert_link_here)  
-  *(Screenshot/Link to Chat: AI helped in reviewing and correcting the report’s grammar)*
-
-```
-
-Why:
-----
-- This section ensures that students are transparent about using AI tools in their project, promoting academic honesty and adhering to institution guidelines.
-
----
