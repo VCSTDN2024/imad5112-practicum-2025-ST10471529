@@ -32,12 +32,11 @@ class DetailedView : AppCompatActivity() {
 
         displaySongs.setOnClickListener {
             // Handle the click event for displaySongs button
-            for (i in 1..4) {
-            }
         }
 
         CalulateAndDisplay.setOnClickListener {
             // Handle the click event for CalulateAndDisplay button
+            val averageRating = playlistmanager.getAverageRating()
         }
 
         btnReturn.setOnClickListener {
