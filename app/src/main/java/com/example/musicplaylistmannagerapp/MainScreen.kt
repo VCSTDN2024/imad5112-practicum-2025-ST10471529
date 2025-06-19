@@ -3,6 +3,7 @@ package com.example.musicplaylistmannagerapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
@@ -17,10 +18,10 @@ class MainScreen : AppCompatActivity() {
     private lateinit var btnAdd: Button
     private lateinit var nextScreen: Button
     private lateinit var btnExit: Button
-    private lateinit var songTile: TextView
-    private lateinit var artistName: TextView
-    private lateinit var userComments: TextView
-    private lateinit var ratings: TextView
+    private lateinit var songTile: EditText
+    private lateinit var artistName: EditText
+    private lateinit var userComments: EditText
+    private lateinit var ratings: EditText
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,7 @@ class MainScreen : AppCompatActivity() {
             val artist = artistName.text.toString()
             val genre = userComments.text.toString()
             val rating = ratings.text.toString()
+            showToast("Successfully added to playlist")
         }
 
         nextScreen.setOnClickListener {
@@ -55,28 +57,9 @@ class MainScreen : AppCompatActivity() {
             finishAffinity()
             exitProcess(0)
         }
-
-        fun showToast(message: String) {
-            Toast.makeText(this, "Successfully added to playlist", Toast.LENGTH_SHORT).show()
-        }
-
-        private fun displaySongInfo() {
-            songTile.text = ""
-
-        }
-        private fun displayArtistInfo() {
-            artistName.text = ""
-            }
-        private fun displayRatings() {
-            ratings.text = ""
-        }
-        private fun displayUserComments() {
-            userComments.text = ""
-        }
-        showResults()
     }
 
-    private fun showResults() {
-        val intent = intent
+    private fun showToast(s: String) {
+        Toast.makeText(this, "Successfully added to playlist", Toast.LENGTH_SHORT).show()
     }
 }
