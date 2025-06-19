@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen">
+
+    <TextView
+        android:id="@+id/songTile"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="Song Title:"
+        android:text=""
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:hint="Artist's name:"
+        android:text=""
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <RadioButton
+        android:id="@+id/rating1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="1"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioButton
+        android:id="@+id/rating2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="2"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioButton
+        android:id="@+id/rating3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="3"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioButton
+        android:id="@+id/rating4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="4"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioButton
+        android:id="@+id/rating5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="5"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <TextView
+        android:id="@+id/userComments"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:hint="User Comments:"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| ADD TO PLAYLIST |"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <Button
+        android:id="@+id/nextScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| NEXT SCREEN |"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| EXIT |"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
